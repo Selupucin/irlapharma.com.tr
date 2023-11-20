@@ -1,0 +1,90 @@
+<header class="header d-flex flex-wrap align-items-center" data-page="home" data-overlay="true">
+    <div class="container d-flex flex-wrap flex-xl-nowrap align-items-center justify-content-between">
+        <a class="brand header_logo d-flex align-items-center" href="/">
+            <span class="logo">
+                <img src="assets/img/logo.png" alt="irla">
+            </span>
+            {# <span class="accent">IR</span>
+                <span>LA</span> #}
+        </a>
+        <nav class="header_nav">
+            <ul class="header_nav-list">
+                <li class="header_nav-list_item">
+                    <a class="nav-link d-inline-flex align-items-center" href="/">
+                        Anasayfa
+                    </a>
+                </li>
+                <li class="header_nav-list_item">
+                    <a class="nav-link d-inline-flex align-items-center" href="/product">
+                        Ürün
+                    </a>
+                </li>
+                {# <li class="header_nav-list_item dropdown">
+                        <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                            data-bs-toggle="collapse" data-bs-target="#newsMenu" aria-expanded="false"
+                            aria-controls="newsMenu">
+                            Medya
+                            <i class="icon-caret_down icon"></i>
+                        </a>
+                        <div class="dropdown-menu collapse" id="newsMenu">
+                            <ul class="dropdown-list">
+                                <li class="list-item nav-item" data-page="news2">
+                                    <a class="dropdown-item" href="news2.html">Haberler</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="post">
+                                    <a class="dropdown-item" href="post.html">Resimler</a>
+                                </li>
+                                <li class="list-item nav-item" data-page="post2">
+                                    <a class="dropdown-item" href="post2.html">Videolar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li> #}
+                <li class="header_nav-list_item dropdown">
+                    <a class="nav-link dropdown-toggle d-inline-flex align-items-center" href="#"
+                        data-bs-toggle="collapse" data-bs-target="#pagesMenu" aria-expanded="false"
+                        aria-controls="pagesMenu">
+                        İrla Kimdir?
+                        <i class="icon-caret_down icon"></i>
+                    </a>
+                    <div class="dropdown-menu collapse" id="pagesMenu">
+                        <ul class="dropdown-list">
+                            <li class="list-item nav-item" data-page="about">
+                                <a class="dropdown-item" href="/about">Hakkımızda</a>
+                            </li>
+                            <li class="list-item nav-item" data-page="faq">
+                                <a class="dropdown-item" href="/faq">Sıkça Sorulan Sorular</a>
+                            </li>
+                            <li class="list-item nav-item" data-page="contacts">
+                                <a class="dropdown-item" href="/contact">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <span class="header_trigger d-inline-flex d-xl-none flex-column justify-content-between">
+            <span class="line line--short"></span>
+            <span class="line line"></span>
+            <span class="line line--short"></span>
+            <span class="line line"></span>
+        </span>
+        <div class="header_user d-flex justify-content-end align-items-center">
+            <form class="header_user-search" action="#" method="get" data-type="searchForm">
+                <input class="header_user-search_field field required" type="text" placeholder="Ara..." />
+                <button
+                    class="header_user-search_btn header_user-action d-inline-flex align-items-center justify-content-center"
+                    type="submit" data-trigger="search">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
+            {# <a class="header_user-action d-inline-flex align-items-center justify-content-center" href="wishlist.html">
+                <i class="icon-heart"></i>
+            </a>
+            <a class="header_user-action d-inline-flex align-items-center justify-content-center"
+                data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                <i class="icon-basket"></i>
+            </a> #}
+        </div>
+    </div>
+</header>

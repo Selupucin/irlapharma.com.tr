@@ -1,0 +1,83 @@
+{% extends "layout.twig" %}
+{% block main %}
+ <!-- Contacts content start -->
+ <main>
+    <div class="contacts section">
+        <div class="container d-flex flex-wrap flex-xl-nowrap justify-content-between">
+            <div class="contacts_form col-12 col-lg-5">
+                <div class="contacts_form-header">
+                    <h2 class="contacts_form-header_title">Sorularınızı Bize Yazın</h2>
+                    <p class="contacts_form-header_text">
+                        En yakın sürede size geri dönüş yapacağız.
+                    </p>
+                </div>
+                <form class="contacts_form-form d-flex flex-column" data-type="feedback" action="post"
+                    method="post">
+                    <label class="contacts_form-form_label" for="contactsName">İsim</label>
+                    <input class="contacts_form-form_field field required" type="text" name="contactsName"
+                        id="contactsName" placeholder="İsminiz" />
+                    <label class="contacts_form-form_label" for="contactsEmail">Email</label>
+                    <input class="contacts_form-form_field field required" type="text" data-type="email"
+                        name="contactsEmail" id="contactsEmail" placeholder="isim@ornek.com" />
+                    <label class="contacts_form-form_label" for="contactsMessage">Mesaj</label>
+                    <textarea class="contacts_form-form_field field required" data-type="message"
+                        name="contactsMessage" id="contactsMessage" placeholder="Mesajınızı yazın."></textarea>
+                    <button class="contacts_form-form_btn btn" type="submit">Gönder</button>
+                </form>
+            </div>
+            <div class="contacts_info col-12 col-lg-6 col-xl-auto flex-xl-grow-1">
+                <ul class="contacts_info-list">
+                    <li class="contacts_info-list_item d-flex flex-column flex-sm-row align-items-center">
+                        <span class="icon d-flex justify-content-center align-items-center">
+                            <i class="icon-location"></i>
+                        </span>
+                        <div class="main d-flex flex-column">
+                            <span>Türkiye</span>
+                            <span>İstanbul</span>
+                        </div>
+                    </li>
+                    <li class="contacts_info-list_item d-flex flex-column flex-sm-row align-items-center">
+                        <span class="icon d-flex justify-content-center align-items-center">
+                            <i class="icon-call"></i>
+                        </span>
+                        <div class="main d-flex flex-column">
+                            <a class="link" href="tel:+90 533 164 80 98">+90 533 164 80 98</a>
+                        </div>
+                    </li>
+                    <li class="contacts_info-list_item d-flex flex-column flex-sm-row align-items-center">
+                        <span class="icon d-flex justify-content-center align-items-center">
+                            <i class="icon-envelope_open"></i>
+                        </span>
+                        <div class="main d-flex flex-column">
+                            <a class="link" href="mailto:info@novamedist.com">info@novamedist.com</a>
+                        </div>
+                    </li>
+                </ul>
+                {# <ul class="contacts_info-socials d-flex align-items-center justify-content-center justify-content-sm-start">
+                        <li class="list-item">
+                            <a class="link" href="https://facebook.com" target="_blank" rel="noopener norefferer">
+                                <i class="icon-facebook icon"></i>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                                <i class="icon-instagram icon"></i>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="https://twitter.com" target="_blank" rel="noopener norefferer">
+                                <i class="icon-twitter icon"></i>
+                            </a>
+                        </li>
+                        <li class="list-item">
+                            <a class="link" href="https://whatsapp.com" target="_blank" rel="noopener norefferer">
+                                <i class="icon-whatsapp icon"></i>
+                            </a>
+                        </li>
+                    </ul> #}
+            </div>
+        </div>
+    </div>
+</main>
+<!-- Contacts content end -->
+{% endblock main %}

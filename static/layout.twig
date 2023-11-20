@@ -1,49 +1,26 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="TR">
 
 <head>
-  <meta charset="utf-8" />
-  <title>Mare Meze - Meze Türleri</title>
-  <!-- Stylesheets -->
-  <link href="assets/css/bootstrap.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
-  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon" />
-  <!-- Responsive -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-  <link href="assets/css/responsive.css" rel="stylesheet" />
-  <!--[if lt IE 9
-      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script
-    ><![endif]-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  {% include "parts/modules/yandex-metrika.twig" %}
+  {% include "parts/modules/google-tag-manager.twig" %}
+  <title>IRLA | {{title}}</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <link rel="stylesheet preload" as="style" href="assets/css/preload.min.css" />
+  <link rel="stylesheet preload" as="style" href="assets/css/icomoon.min.css" />
+  <link rel="stylesheet preload" as="style" href="assets/css/libs.min.css" />
+  <link rel="stylesheet" href="assets/css/{{titleSub}}.min.css" />
 </head>
+{% include "parts/modules/google-analytics.twig" %}
 
 <body>
-  <div class="page-wrapper">
-    {% include "parts/page-loader.twig" %}
-    {% include "parts/header.twig" %}
-    {% block main %} {% endblock main %}
-    {% include "parts/footer.twig" %}
-  </div>
-  <!--End pagewrapper-->
-
-  <!--Scroll to top-->
-  <div class="scroll-to-top scroll-to-target" data-target="html">
-    <span class="icon fa fa-angle-up"></span>
-  </div>
-
-  <script src="assets/js/jquery.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/jquery-ui.js"></script>
-  <script src="assets/js/jquery.fancybox.js"></script>
-  <script src="assets/js/swiper.js"></script>
-  <script src="assets/js/owl.js"></script>
-  <script src="assets/js/appear.js"></script>
-  <script src="assets/js/wow.js"></script>
-  <script src="assets/js/parallax.min.js"></script>
-  {% block javascript %} {% endblock javascript %}
-  <script src="assets/js/custom-script.js"></script>
+  {% include "parts/modules/google-tag-manager-noscript.twig" %}
+  {% include "parts/header.twig" %}
+  {% block main %} {% endblock main %}
+  {% include "parts/footer.twig" %}
+  <script src="assets/js/common.min.js"></script>
+  <script src="assets/js/{{titleSub}}.min.js"></script>
 </body>
-
-</html>

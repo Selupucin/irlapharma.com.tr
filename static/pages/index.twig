@@ -1,3 +1,568 @@
-{% extends "layout.twig" %} {% block main %}
+{% extends "layout.twig" %}
+{% block main %}
+<!-- Homepage content start -->
+<main>
+  <!-- Hero section start -->
+  <section class="hero">
+      <div class="container d-xl-flex align-items-start">
+          <div class="hero_about col-xl-6">
+              <div class="hero_header">
+                  <h1 class="hero_header-title">Koruyucu İçermez</h1>
+                  <p class="hero_header-text">
+                      Liberox takviye besin amacıyla kullanılır ve kesinlikle koruyucu, renklendirici, gluten,
+                      şeker içermez.
+                  </p>
+                  <a class="hero_header-btn btn" href="/product">Ürünü İncele</a>
+                  <a class="hero_header-btn btn" style="margin-left: 3px;"
+                      href="https://www.novamedist.com/product/liberox-demir-dikeni-ekstresi-lepidyum-maca-ekstresi-60-tablet/">Satın
+                      Al</a>
+              </div>
+              <div class="hero_contacts">
+                  <p class="hero_contacts-text">Bize 7/24 yazabilir, ürün hakkında bilgi ve destek alabilirsiniz.
+                  </p>
+                  <span class="hero_contacts-data d-flex flex-column flex-sm-row align-items-center">
+                      <span class="icon d-flex align-items-center justify-content-center">
+                          <i class="icon-call"></i>
+                      </span>
+                      <span class="d-flex flex-column">
+                          <span>Whatsapp Hattı</span>
+                          <a class="link" href="https://wa.me/+905331648098">+90 533 164 80 98</a>
+                      </span>
+                  </span>
+              </div>
+          </div>
+          <div class="hero_promo col-xl-6">
+              <div class="hero_promo-underlay"></div>
+              <div class="hero_promo-underlay--highlight"></div>
+              <div class="hero_slider swiper">
+                  <div class="swiper-wrapper">
+                      <div
+                          class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                          <div class="hero_slider-slide_media">
+                              <picture>
+                                  <source data-srcset="assets/img/hero-image.png" srcset="assets/img/hero-image.png"
+                                      type="image/webp" />
+                                  <img class="lazy" data-src="assets/img/hero-image.png" src="assets/img/hero-image.png"
+                                      alt="media" />
+                              </picture>
+                          </div>
+                          <div class="hero_slider-slide_main">
+                              <h2 class="title">Demir Dikeni Ekstresi</h2>
+                              <p class="text">
+                                  Batı ülkelerinde, demir dikeni daha çok popüler besin takviyesi Tribulus
+                                  terrestris olarak bilinir. İnsanlar, diğer birçok kullanımın yanı sıra
+                                  libidolarını ve testosteronlarını artırmak için kullanırlar.
+                              </p>
+                              <ul class="list">
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Antioksidan
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Kan Şekerinizi Düzenler
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Kan Basıncını Düşürebilir...
+                                  </li>
+                              </ul>
+                              <a class="btn--underline" href="/product">Devam Et</a>
+                          </div>
+                      </div>
+                      <div
+                          class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                          <div class="hero_slider-slide_media">
+                              <picture>
+                                  <source data-srcset="assets/img/hero-image2.png" srcset="assets/img/hero-image2.png"
+                                      type="image/webp" />
+                                  <img class="lazy" data-src="assets/img/hero-image2.png" src="assets/img/hero-image2.png"
+                                      alt="media" />
+                              </picture>
+                          </div>
+                          <div class="hero_slider-slide_main">
+                              <h2 class="title">Lepidyum (MACA) Ekstresi</h2>
+                              <p class="text">
+                                  Maca bitkisi daha çok şalgam, turp benzeri bir bitki kökü, Peru dağlarının
+                                  yükseklerinde yetişen bitki, dünyanın her yerine yayılmış ve sağlık etkilerinin
+                                  çok yüksek olduğu artık bilinmektedir.
+                              </p>
+                              <ul class="list">
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Stres ve yorgunluğu giderir
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Bağışıklık sistemini güçlendirir
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-check"></i>
+                                      </span>
+                                      Maca kökünde vitamin ve mineraller vardır...
+                                  </li>
+                              </ul>
+                              <a class="btn--underline" href="/about">İncele</a>
+                          </div>
+                      </div>
+                      <div
+                          class="hero_slider-slide d-flex flex-column flex-md-row justify-content-between justify-content-md-start align-items-md-center swiper-slide">
+                          <div class="hero_slider-slide_media">
+                              <picture>
+                                  <source data-srcset="assets/img/hero-image.png" srcset="assets/img/hero-image.png"
+                                      type="image/webp" />
+                                  <img class="lazy" data-src="assets/img/hero-image.png" src="assets/img/hero-image.png"
+                                      alt="media" />
+                              </picture>
+                          </div>
+                          <div class="hero_slider-slide_main">
+                              <h2 class="title">Sıkça Sorulan Sorular</h2>
+                              <p class="text">
+                                  Müşterilerimizden Gelen En Sık Sorular
+                              </p>
+                              <ul class="list">
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-plus"></i>
+                                      </span>
+                                      <a href="/faq"> Kimler kullanamaz?</a>
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-plus"></i>
+                                      </span>
+                                      <a href="/faq"> İçinde neler var?</a>
+                                  </li>
+                                  <li
+                                      class="list-item d-flex align-items-center justify-content-center justify-content-sm-start">
+                                      <span class="icon d-flex align-items-center justify-content-center">
+                                          <i class="icon-plus"></i>
+                                      </span>
+                                      <a href="/faq"> Sağlıklı mı?</a>
+                                  </li>
+                              </ul>
+                              <a class="btn--underline" href="/faq">Tüm Sorular</a>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="hero-pagination swiper-pagination d-sm-flex flex-column"></div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Hero section end -->
+  <!-- About section start -->
+  <section class="about section--nopb">
+      <div class="container">
+          <div class="about_main d-lg-flex justify-content-between">
+              <div class="about_main-content col-lg-6 col-xl-auto">
+                  <h2 class="about_main-content_header">
+                      %100 Doğal Besin Takviyesi
+                  </h2>
+                  <p class="about_main-content_text">
+                      Diyet veya beslenme takviyeleri ismi de verilen gıda takviyelerinin ardında yatan fikir,
+                      yeterli miktarlarda tüketilmeyen besinlerin tedarik edilmesidir. Liberox size en doğal
+                      vitamin ve mineral takviyelerini sunmayı hedefleyen kapsül gıda takviyesidir.
+                  </p>
+              </div>
+              <div class="about_main-media">
+                  <picture>
+                      <source data-srcset="assets/img/triple-image.png" srcset="assets/img/triple-image.png"
+                          type="image/webp" />
+                      <img class="lazy" data-src="assets/img/triple-image.png" src="assets/img/triple-image.png" alt="media" />
+                  </picture>
+              </div>
+          </div>
+          <ul class="about_numbers d-flex flex-wrap">
+              <li class="about_numbers-group col-sm-6 col-lg-3" data-order="1">
+                  <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                      <span class="countNum number d-flex align-items-center secondary" data-suffix="+"
+                          data-value="20">0</span>
+                      <p class="number-label">Vitamin ve Mineral Takviyesi</p>
+                  </div>
+              </li>
+              <li class="about_numbers-group col-sm-6 col-lg-3" data-order="2">
+                  <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                      <span class="countNum number d-flex align-items-center secondary" data-suffix="X"
+                          data-value="3">0</span>
+                      <p class="number-label">Hızlı etki</p>
+                  </div>
+              </li>
+              <li class="about_numbers-group col-sm-6 col-lg-3" data-order="3">
+                  <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                      <span class="countNum number d-flex align-items-center secondary" data-suffix="%"
+                          data-value="100">0</span>
+                      <p class="number-label">Doğal</p>
+                  </div>
+              </li>
+              <li class="about_numbers-group col-sm-6 col-lg-3" data-order="4">
+                  <div class="wrapper d-flex flex-column align-items-center align-items-sm-start">
+                      <span class="countNum number d-flex align-items-center secondary" data-suffix="K"
+                          data-value="11">0</span>
+                      <p class="number-label">Satış Rekoru</p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+  <!-- About section end -->
+  <!-- Product section start -->
+  <div class="product section">
+      <div class="container d-flex flex-column flex-lg-row">
+          <div class="product_media">
+              <picture>
+                  <source data-srcset="assets/img/product-image.png" srcset="assets/img/product-image.png" type="image/webp" />
+                  <img class="lazy" data-src="assets/img/product-image.png" src="assets/img/product-image.png"
+                      alt="CBD Facial Serum: Anti-Aging + Daily Moisturizer" />
+              </picture>
+          </div>
+          <div class="product_main col-lg-6">
+              <a class="product_main-title" href="/product" target="_blank"
+                  rel="noopener norefferer">Liberox</a>
+              <div class="product_main-rating d-flex align-items-center">
 
+              </div>
+              <p class="product_main-text">
+                  60 kapsül içerek her bir kutuda, her bir kapsül ile destekde bulunduğu vitaminler ve minareller:
+              </p>
+              <ul class="product_main-list">
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Demir Dikeni Esktresi
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Epimedium Sp. Ekstresi
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Lepidyum Ekstresi
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Çinko
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Kore Ginsengi Ekstresi
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Vitamin B1, B6, D3, B12
+                  </li>
+                  <li class="list-item d-flex align-items-center">
+                      <i class="icon-check icon d-flex align-items-center justify-content-center"></i>
+                      Selenyum
+                  </li>
+              </ul>
+              <div class="product_main-action d-flex align-items-center">
+                  {# <<span class="price">$7.97</span> #}
+                  <a class="btn"
+                      href="https://www.novamedist.com/product/liberox-demir-dikeni-ekstresi-lepidyum-maca-ekstresi-60-tablet/">Satın
+                      Al</a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Product section end -->
+  <!-- Promo info section start -->
+  <section class="info section">
+      <div class="info_deco">
+          <div class="info_deco-wrapper">
+              <picture>
+                  <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg" type="image/webp" />
+                  <img class="lazy leaf leaf--left" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                      alt="deco" />
+              </picture>
+          </div>
+          <div class="info_deco-wrapper">
+              <picture>
+                  <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg" type="image/webp" />
+                  <img class="lazy leaf leaf--right" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                      alt="deco" />
+              </picture>
+          </div>
+      </div>
+      <div class="info_highlight">
+          <span class="underlay underlay--left">
+              <span class="underlay_circle underlay_circle--accent"></span>
+          </span>
+          <span class="underlay underlay--right">
+              <span class="underlay_circle underlay_circle--small underlay_circle--green"></span>
+              <span class="underlay_circle underlay_circle--big underlay_circle--green"></span>
+          </span>
+      </div>
+      <div class="container">
+          <div class="info_content d-flex flex-column align-items-center">
+              <h2 class="info_content-header">
+                  Vücudunuza Değer Verin, Kendinize Değer Verin
+              </h2>
+          </div>
+      </div>
+  </section>
+  <!-- Promo info section end  -->
+  <!-- Effects section start  -->
+  <section class="effects section--nopb">
+      <span class="effects_underlay">
+          <span class="effects_underlay-circle effects_underlay-circle--accent"></span>
+          <span class="effects_underlay-circle effects_underlay-circle--green"></span>
+      </span>
+      <div class="container d-md-flex flex-wrap flex-xxl-nowrap justify-content-between align-items-center">
+          <div class="effects_header d-lg-flex flex-xxl-column col-md-12 col-xxl-auto">
+              <div class="main col-lg-6 col-xl-12">
+                  <h2 class="effects_header-title">İRLA Kimdir?</h2>
+                  <p style="margin-bottom: 30px;" class="effects_header-text">
+                      Vitamin, mineral, multivitamin, bitkisel ve spesifik takviyeleri içeren kaliteli
+                      ürünleri ile Türkiye’de kullanıcılarının ilgi ve memnuniyeti ile birlikte sürekli büyüyen,
+                      tüketicilerine en yüksek kalitede ürünler sunmayı amaçlayan firmadır.
+                  </p>
+                  <a class="btn--underline" href="/about">Okumaya devam et</a>
+              </div>
+          </div>
+          <div class="effects_media">
+              <picture>
+                  <source data-srcset="assets/img/product-dual-image.png" srcset="assets/img/product-dual-image.png"
+                      type="image/webp" />
+                  <img class="lazy" data-src="assets/img/product-dual-image.png" src="assets/img/product-dual-image.png"
+                      alt="media" />
+              </picture>
+          </div>
+          <ul class="effects_list col-xxl-4">
+              <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                  data-aos="fade-up">
+                  <span class="icon d-flex align-items-center justify-content-center">
+                      <i class="icon-flash"></i>
+                  </span>
+                  <div class="wrapper">
+                      <h4 class="effects_list-item_header">Kaliteye Ulaşmanın Kestirme Yolu Yoktur</h4>
+                      <p class="effects_list-item_text">
+                          Kalitemizi sergilemek adına her zaman sizler için en doğru ürünü sunmayı tercih
+                          ediyoruz.
+                      </p>
+                  </div>
+              </li>
+              <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                  data-aos="fade-up">
+                  <span class="icon d-flex align-items-center justify-content-center">
+                      <i class="icon-heartbeat"></i>
+                  </span>
+                  <div class="wrapper">
+                      <h4 class="effects_list-item_header">Sağlık ve Kalite Birarada</h4>
+                      <p class="effects_list-item_text">
+                          Tüketicilerimizin sağlıklı ve mutlu bir hayata doğal ürünler ile ulaşmasını sağlamak ilk
+                          amacımız.
+                      </p>
+                  </div>
+              </li>
+              <li class="effects_list-item d-flex flex-column align-items-center flex-sm-row align-items-sm-start"
+                  data-aos="fade-up">
+                  <span class="icon d-flex align-items-center justify-content-center">
+                      <i class="icon-head"></i>
+                  </span>
+                  <div class="wrapper">
+                      <h4 class="effects_list-item_header">Doğru Tercih</h4>
+                      <p class="effects_list-item_text">
+                          Bir çok takviye arasından sıyrılan Liberox ile en doğru tercihi yaptığınızı fark
+                          edeceksiniz.
+                      </p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </section>
+  <!-- Effects section end  -->
+  {# <!-- Latest news section start -->
+  <section class="latest section">
+      <div class="container">
+          <h2 class="latest_header">Haberler</h2>
+          <div class="latest_wrapper d-flex flex-column-reverse flex-lg-row">
+              <div class="latest_promo" data-aos="fade-right">
+                  <picture>
+                      <source srcset="assets/img/placeholder.jpg" type="image/webp" />
+                      <img class="lazy latest_promo-bg" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                          alt="promo" />
+                  </picture>
+                  <div class="overlay d-flex d-sm-block flex-column justify-content-center">
+                      <h4 class="overlay_header">Haber Başlığı 1</h4>
+                      <p class="overlay_text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      </p>
+                  </div>
+              </div>
+              <ul class="latest_list col-lg-7 col-xl-6">
+                  <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                      <span class="latest_list-preview">
+                          <picture>
+                              <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                                  type="image/webp" />
+                              <img class="lazy preview-img" data-src="assets/img/placeholder.jpg"
+                                  src="assets/img/placeholder.jpg" alt="Top 15 Best Strain Of Weed For Anxiety" />
+                          </picture>
+                      </span>
+                      <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                          <span class="metadata">
+                              <span class="metadata_item d-inline-flex align-items-center">
+                                  <i class="icon-calendar_day icon secondary"></i>
+                                  September 30, 2021
+                              </span>
+                          </span>
+                          <a class="title" href="post.html">Haber Başlığı 2</a>
+                          <p class="text">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                  <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                      <span class="latest_list-preview">
+                          <picture>
+                              <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                                  type="image/webp" />
+                              <img class="lazy preview-img" data-src="assets/img/placeholder.jpg"
+                                  src="assets/img/placeholder.jpg" alt="Raw Cannabis Seeds Promote Health" />
+                          </picture>
+                      </span>
+                      <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                          <span class="metadata">
+                              <span class="metadata_item d-inline-flex align-items-center">
+                                  <i class="icon-calendar_day icon secondary"></i>
+                                  September 30, 2021
+                              </span>
+                          </span>
+                          <a class="title" href="post.html">Haber Başlığı 3</a>
+                          <p class="text">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+                  <li class="list-item d-flex flex-column flex-sm-row" data-aos="fade-up">
+                      <span class="latest_list-preview">
+                          <picture>
+                              <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                                  type="image/webp" />
+                              <img class="lazy preview-img" data-src="assets/img/placeholder.jpg"
+                                  src="assets/img/placeholder.jpg" alt="How Many Autoflowers In a Tent?" />
+                          </picture>
+                      </span>
+                      <div class="latest_list-main d-sm-flex flex-column justify-content-between flex-grow-1">
+                          <span class="metadata">
+                              <span class="metadata_item d-inline-flex align-items-center">
+                                  <i class="icon-calendar_day icon secondary"></i>
+                                  September 30, 2021
+                              </span>
+                          </span>
+                          <a class="title" href="post.html">Haber Başlığı 4</a>
+                          <p class="text">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                          </p>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </section> 
+  <!-- Latest news section end --> #}
+
+  {# <!-- Instagram section start -->
+  <section class="instagram">
+      <div class="container">
+          <div class="instagram_header">
+              <h2 class="instagram_header-title">Instagram</h2>
+              <p class="instagram_header-text">
+                  Accumsan sit amet nulla facilisi morbi tempus. Suscipit tellus mauris a diam maecenas sed enim
+                  ut sem
+              </p>
+          </div>
+      </div>
+      <div class="instagram_slider swiper">
+          <div class="swiper-wrapper">
+              <div class="instagram_slider-slide swiper-slide">
+                  <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                      <picture>
+                          <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                              type="image/webp" />
+                          <img class="lazy" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                              alt="instagram post" />
+                      </picture>
+                      <span class="overlay d-flex justify-content-center align-items-center">
+                          <i class="icon-instagram"></i>
+                      </span>
+                  </a>
+              </div>
+              <div class="instagram_slider-slide swiper-slide">
+                  <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                      <picture>
+                          <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                              type="image/webp" />
+                          <img class="lazy" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                              alt="instagram post" />
+                      </picture>
+                      <span class="overlay d-flex justify-content-center align-items-center">
+                          <i class="icon-instagram"></i>
+                      </span>
+                  </a>
+              </div>
+              <div class="instagram_slider-slide swiper-slide">
+                  <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                      <picture>
+                          <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                              type="image/webp" />
+                          <img class="lazy" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                              alt="instagram post" />
+                      </picture>
+                      <span class="overlay d-flex justify-content-center align-items-center">
+                          <i class="icon-instagram"></i>
+                      </span>
+                  </a>
+              </div>
+              <div class="instagram_slider-slide swiper-slide">
+                  <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                      <picture>
+                          <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                              type="image/webp" />
+                          <img class="lazy" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                              alt="instagram post" />
+                      </picture>
+                      <span class="overlay d-flex justify-content-center align-items-center">
+                          <i class="icon-instagram"></i>
+                      </span>
+                  </a>
+              </div>
+              <div class="instagram_slider-slide swiper-slide">
+                  <a class="link" href="https://instagram.com" target="_blank" rel="noopener norefferer">
+                      <picture>
+                          <source data-srcset="assets/img/placeholder.jpg" srcset="assets/img/placeholder.jpg"
+                              type="image/webp" />
+                          <img class="lazy" data-src="assets/img/placeholder.jpg" src="assets/img/placeholder.jpg"
+                              alt="instagram post" />
+                      </picture>
+                      <span class="overlay d-flex justify-content-center align-items-center">
+                          <i class="icon-instagram"></i>
+                      </span>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Instagram section end --> #}
+</main>
+<!-- Homepage content end -->
 {% endblock main %}
