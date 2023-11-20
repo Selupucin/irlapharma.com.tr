@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const app = express()
-const port = 5040
+const port = 3510
 const { TwingEnvironment, TwingLoaderFilesystem } = require('twing');
 let loader = new TwingLoaderFilesystem('static');
 var twing = new TwingEnvironment(loader)
@@ -13,31 +13,31 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // GET Requests
 // Index
 app.get('/', (req, res) => {
-  twing.render("/pages/index.twig", {title: "Ürün", titleSub: "index"}).then(output => {
+  twing.render("/pages/index.twig", {title: "Anasayfa", titleSub: "index"}).then(output => {
     res.send(output)
   })
 })
 // About
 app.get('/about', (req, res) => {
-  twing.render("/pages/about.twig", {title: "Ürün", titleSub: "about"}).then(output => {
+  twing.render("/pages/about.twig", {title: "Hakkımızda", titleSub: "about"}).then(output => {
     res.send(output)
   })
 })
 // Product
 app.get('/product', (req, res) => {
-  twing.render("/pages/product.twig", {title: "Ürün", titleSub: "product"}).then(output => {
+  twing.render("/pages/product.twig", {title: "Liberox", titleSub: "product"}).then(output => {
     res.send(output)
   })
 })
 // FAQ
 app.get('/faq', (req, res) => {
-  twing.render("/pages/faq.twig", {title: "Ürün", titleSub: "faq"}).then(output => {
+  twing.render("/pages/faq.twig", {title: "S.S.S", titleSub: "faq"}).then(output => {
     res.send(output)
   })
 })
 // Contact
 app.get('/contact', (req, res) => {
-  twing.render("/pages/contact.twig", {title: "Ürün", titleSub: "contact"}).then(output => {
+  twing.render("/pages/contact.twig", {title: "İletişim", titleSub: "contact"}).then(output => {
     res.send(output)
   })
 })
