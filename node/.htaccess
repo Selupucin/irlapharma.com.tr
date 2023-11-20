@@ -1,0 +1,10 @@
+# Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^irlapharma.com.tr/[nc]
+RewriteRule ^(.*)$ https://www.irlapharma.com.tr//$1 [r=301,nc]
+
+# Caching schema
+<FilesMatch "\.(jpg|png|css|js)$">
+Header set Cache-Control "max-age=600"
+</FilesMatch>

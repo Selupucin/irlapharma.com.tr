@@ -1,6 +1,4 @@
-User-agent: *
-Disallow: 
-Disallow: /cgi-bin/
-Disallow: /control-menu/
-Disallow: /login/
-Sitemap: https://maremeze.com/sitemap.xml
+User-Agent: *
+Allow: 
+
+Sitemap: https://irlapharma.com.tr/sitemap.xml
