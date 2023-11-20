@@ -1,0 +1,29 @@
+{
+  "name": "verimor-node-sdk",
+  "version": "0.1.1",
+  "description": "The node client for verimor api.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "for i in tests/*.js; do node \"$i\"; done",
+    "commit": "node devops/commit.js commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muratgozel/verimor-node-sdk.git"
+  },
+  "keywords": [
+    "sms",
+    "verimor"
+  ],
+  "author": "Murat Gözel <murat@gozel.com.tr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/muratgozel/verimor-node-sdk/issues"
+  },
+  "homepage": "https://github.com/muratgozel/verimor-node-sdk#readme",
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "semver": "^7.3.4",
+    "yargs": "^16.2.0"
+  }
+}
